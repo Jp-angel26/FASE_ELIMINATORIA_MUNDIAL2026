@@ -1080,7 +1080,7 @@ function faseElim(titulo,partidos){
     // Llave — construir según el tipo de fase
     var llave='';
     if(m.lr&&m.vr){
-      llave=m.lr+'-'+m.vr;  // OCT, TER ya tienen lr/vr
+      llave=(m.lref||m.lr)+'-'+(m.vref||m.vr);  // OCT, TER ya tienen lr/vr
     } else if(m.lp&&m.vp){
       // CUA, SEM, SFNL, FNL: construir desde lp/vp
       llave='W'+m.lp+'-W'+m.vp;
